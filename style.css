@@ -22,7 +22,7 @@ html {
 	background-size: cover;
 }
 
-.wrap:before{
+body:before{
   /* content:""; */
   display:block;
   position:fixed;
