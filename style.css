@@ -26,8 +26,8 @@ html {
 	background-size: cover;
 }
 
-/* body:before{ */
-  /* content:"";
+body::before{
+  content:"";
   display:block;
   position:fixed;
   top:0;
@@ -37,7 +37,7 @@ html {
   height:100vh;
   background:url("images/bg1.jpg") center no-repeat fixed;
   background-size:cover;
-} */
+}
 
 section {
 	padding: 6rem 0;
