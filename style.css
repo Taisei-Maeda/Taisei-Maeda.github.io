@@ -15,9 +15,9 @@ html {
 	color: #eee;
 }
 
-.animated {
+/* .animated {
   opacity: 0;
-}
+} */
 
 body::before{
   content:"";
