@@ -16,7 +16,7 @@ html {
 }
 
 .wp {
-	display: none;
+	opacity: 0;
 }
 
 body::before{
