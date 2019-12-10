@@ -15,9 +15,9 @@ html {
 	color: #eee;
 }
 
-/* .animated {
-  opacity: 0;
-} */
+.wp {
+	display: none;
+}
 
 body::before{
   content:"";
