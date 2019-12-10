@@ -15,10 +15,6 @@ html {
 	color: #eee;
 }
 
-.wp {
-	opacity: 0;
-}
-
 body::before{
   content:"";
   display:block;
