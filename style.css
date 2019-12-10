@@ -16,7 +16,7 @@ html {
 }
 
 .animated {
-	display: none;
+	opacity: 0;
 }
 /* 
 body {
