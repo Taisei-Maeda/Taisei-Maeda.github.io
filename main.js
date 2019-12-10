@@ -38,29 +38,26 @@ $('a[href^=#]').click(function(){
 });
 
 
-// $('.animated').waypoint({
-//   handler(direction) {
-//     if (direction === 'down') {
-//       $(this.element).addClass('fadeInUp');
-//       this.destroy();
+// animatedクラスの付いた要素にwaypointを登録
+$('.animated').waypoint({
+  handler(direction) {
+    // 要素が画面中央に来るとここが実行される
+    if (direction === 'down') {
+      /**
+       * 下方向のスクロール
+       * イベント発生元の要素にfadeInUpクラスを付けることで
+       * アニメーションを開始
+       */
+      $(this.element).addClass('fadeInUp');
 
-$(document).ready(function() {
-  
-  $('.wpu').waypoint(function() {
-    $('.wpu').addClass('animated fadeInUp');
-  }, {
-    offset: '80%'
-  });
-  $('.wpr').waypoint(function() {
-    $('wpr').addClass('animated slideInRight');
-  }, {
-    offset: '80%'
-  });
-  $('.wpl').waypoint(function() {
-    $('wpl').addClass('animated slideInLeft');
-  }, {
-    offset: '80%'
-  });
+      /**
+       * waypointを削除することで、この要素に対しては
+       * これ以降handlerが呼ばれなくなる
+       */
+      this.destroy();
+    }
+  },
 
+  // 要素が画面中央に来たらhandlerを実行
+  offset: '50%',
 });
-
