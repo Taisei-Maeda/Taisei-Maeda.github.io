@@ -37,6 +37,10 @@ $('a[href^=#]').click(function(){
   $('body').animate({scrollTop: targetY}, 500, 'swing');
 });
 
+/**
+ * animatedクラスを持つ要素が画面内に入ったら
+ * Animate.cssのfadeInUpエフェクトを適用
+ */
 $('.animated').waypoint({
   handler(direction) {
     if (direction === 'down') {
